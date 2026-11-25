@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RC CENTER | Ravi Chettu Center - Ganesh Utsav, Minagallu Village</title>
+  <meta name="description" content="RC Center (Ravi Chettu Center), Minagallu Village. Our Ganesh Utsav festival: photos, videos, memories and the story of our celebrations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,600;1,400&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <nav id="nav" class="site-nav">
+      <a href="#about">About</a>
+      <a href="#facts">Facts</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Photos</a>
+      <a href="#videos-gallery">Videos</a>
+      <a href="#videos">Reels</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#top" class="brand" aria-label="RC Center home">
+      <img src="images/rc-logo.png" alt="RC Center logo" class="brand-logo">
+      <span  >RC CENTER</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="hero-kicker" data-text="heroKicker"></p>
+        <h1 class="hero-title" data-text="heroTitle"></h1>
+        <p class="hero-subtitle" data-text="heroSubtitle"></p>
+        <div class="hero-buttons">
+          <a href="#events" class="btn btn-solid">See the festival</a>
+          <a href="#gallery" class="btn btn-line">View photos</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <img class="hero-img" src="images/hero/hero-ganesha.svg" alt="Lord Ganesha" data-hero-img>
+      </div>
+    </section>
+
+    <!-- Ticker band -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
+
+    <!-- 2. ABOUT -->
+    <section id="about" class="section section-white">
+      <div class="container split">
+        <div class="split-image">
+          <img data-img="about" src="images/site/about.svg" alt="Our village festival" loading="lazy">
+        </div>
+        <div class="split-text reveal">
+          <h2 class="big-title" data-text="aboutTitle"></h2>
+          <p class="lead" data-text="aboutLead"></p>
+          <div data-text-list="aboutParagraphs"></div>
+          <h3 class="small-title" data-text="aboutPointsTitle"></h3>
+          <ul class="plain-list" data-list="aboutPoints"></ul>
+          <a href="#facts" class="btn btn-solid">Know more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. NOTE FROM THE VILLAGE -->
+    <section id="note" class="section section-light">
+      <div class="container">
+        <div class="note-card reveal">
+          <h2 class="big-title small" data-text="noteTitle"></h2>
+          <div data-text-list="noteBody"></div>
+          <p class="note-sign" data-text="noteSignature"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FESTIVAL DAYS (dark, with big watermark) -->
+    <section id="celebrations" class="section section-dark">
+      <div class="watermark" aria-hidden="true" data-text="watermark"></div>
+      <div class="container narrow reveal">
+        <h2 class="big-title" data-text="celebrationTitle"></h2>
+        <div class="dark-text" data-text-list="celebrationParagraphs"></div>
+        <p class="closing-line" data-text="closingChant"></p>
+      </div>
+    </section>
+
+    <!-- 5. HIGHLIGHTS: memories, photos, reels -->
+    <section id="highlights" class="section section-white">
+      <div class="container">
+        <h2 class="big-title" data-text="highlightsTitle"></h2>
+        <p class="section-intro" data-text="highlightsIntro"></p>
+
+        <div class="sub-head"><h3>Festival memories</h3><a href="#memories">All memories &rarr;</a></div>
+        <div class="memory-grid" id="highlight-memories"></div>
+
+        <div class="sub-head"><h3>Latest photos</h3><a href="#gallery">Full gallery &rarr;</a></div>
+        <div class="highlight-photos" id="highlight-photos"></div>
+
+        <div class="sub-head"><h3>Latest reels</h3><a href="#videos">All reels &rarr;</a></div>
+        <div class="reel-grid" id="highlight-reels"></div>
+      </div>
+    </section>
+
+    <!-- 6. FESTIVAL EVENTS -->
+    <section id="events" class="section section-light">
+      <div class="container">
+        <h2 class="big-title">Festival events</h2>
+        <p class="section-intro">What happens at our festival, day by day.</p>
+        <div class="event-grid" id="event-grid"></div>
+      </div>
+    </section>
+
+    <!-- 7. PHOTO GALLERY -->
+    <section id="gallery" class="section section-white">
+      <div class="container">
+        <h2 class="big-title">Photo gallery</h2>
+        <p class="section-intro">Choose a year or an event to see its photos. Tap any photo to make it big.</p>
+        <div class="filter-bar" id="year-filter" role="tablist" aria-label="Filter by year"></div>
+        <div class="filter-bar filter-sub" id="event-filter" role="tablist" aria-label="Filter by event"></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <p class="empty-note" id="gallery-empty" hidden>No photos yet for this choice.</p>
+      </div>
+    </section>
+
+    <!-- 8. VIDEO GALLERY -->
+    <section id="videos-gallery" class="section section-light">
+      <div class="container">
+        <h2 class="big-title">Video gallery</h2>
+        <p class="section-intro">Choose a year or an event to watch festival videos.</p>
+        <div class="filter-bar" id="video-year-filter-public" role="tablist" aria-label="Filter videos by year"></div>
+        <div class="filter-bar filter-sub" id="video-event-filter" role="tablist" aria-label="Filter videos by event"></div>
+        <div class="video-grid" id="video-gallery-grid"></div>
+        <p class="empty-note" id="video-gallery-empty" hidden>No videos yet for this choice.</p>
+      </div>
+    </section>
+
+    <!-- 9. REELS -->
+    <section id="videos" class="section section-dark">
+      <div class="container">
+        <h2 class="big-title">Reels and videos</h2>
+        <p class="section-intro dark-text">Short videos from our festival on Instagram.</p>
+        <div class="reel-grid" id="reel-grid"></div>
+        <div class="reel-follow">
+          <p>See more on Instagram</p>
+          <a href="https://www.instagram.com/rc_center_official" target="_blank" rel="noopener" class="btn btn-solid">Follow @rc_center_official</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. MEMORIES -->
+    <section id="memories" class="section section-light">
+      <div class="container">
+        <h2 class="big-title">Looking back</h2>
+        <p class="section-intro">Memories from our earlier festivals.</p>
+        <div class="memory-grid" id="memory-grid"></div>
+      </div>
+    </section>
+
+    <!-- 10. FACTS (image left, numbered list right) -->
+    <section id="facts" class="section section-white">
+      <div class="container split facts-split">
+        <div class="split-image">
+          <img data-img="facts" src="images/site/facts.svg" alt="Lord Ganesha statue" loading="lazy">
+        </div>
+        <div class="split-text reveal">
+          <h2 class="big-title"><span class="huge" data-text="factsTitle"></span></h2>
+          <ol class="facts-list" data-list="facts"></ol>
+          <a href="#events" class="btn btn-solid">Know more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. QUOTES -->
+    <section id="quotes" class="section section-quotes">
+      <div class="container">
+        <h2 class="big-title">Words of devotion</h2>
+        <div class="quote-stage" id="quote-stage" aria-live="polite"></div>
+        <div class="quote-dots" id="quote-dots"></div>
+      </div>
+    </section>
+
+    <!-- 12. HEART CALL-TO-ACTION -->
+    <section id="heart" class="section section-dark heart-section">
+      <div class="container heart-split">
+        <div class="heart-image">
+          <img data-img="heart" src="images/site/heart.svg" alt="" loading="lazy">
+        </div>
+        <div class="heart-box reveal">
+          <a href="https://www.instagram.com/rc_center_official" target="_blank" rel="noopener" class="heart-btn" aria-label="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true"><path fill="#e0151f" d="M12 21s-7.5-4.6-9.6-9.1C.9 8.6 2.6 5 6.2 5c2.1 0 3.4 1.2 4.1 2.3C11 6.2 12.4 5 14.5 5c3.6 0 5.3 3.6 3.8 6.9C19.5 16.4 12 21 12 21z"/></svg>
+          </a>
+          <p class="heart-text" data-text="heartText"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. CONTACT -->
+    <section id="contact" class="section section-white">
+      <div class="container split">
+        <div class="split-text reveal">
+          <h2 class="big-title">Contact us</h2>
+          <div class="contact-info" id="contact-info"></div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/rc_center_official" target="_blank" rel="noopener" class="social-btn">Instagram: @rc_center_official</a>
+            <a href="mailto:rccenterofficial@gmail.com" class="social-btn">Email: rccenterofficial@gmail.com</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <label>Your name<input type="text" name="name" required></label>
+          <label>Your email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-solid">Send message</button>
+          <p class="form-note">This opens your email app with your message to rccenterofficial@gmail.com.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" aria-label="Previous">&#8249;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+  </div>
+
+  <!-- Background music (starts only when the visitor presses Play) -->
+  <div class="music-player" id="music-player" hidden>
+    <button class="music-btn" id="music-toggle" aria-pressed="false">&#9654; Play music</button>
+    <button class="music-btn round" id="mute-toggle" aria-label="Mute music" title="Mute or unmute">&#128266;</button>
+    <span class="music-title" id="music-title"></span>
+    <span class="music-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    <audio id="bg-music" loop preload="none"></audio>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-script">RC Center</p>
+        <h3>RAVI CHETTU CENTER</h3>
+        <p data-text="heroSubtitle"></p>
+      </div>
+      <div>
+        <h4>Go to</h4>
+        <a href="#about">About</a><br>
+        <a href="#highlights">Highlights</a><br>
+        <a href="#gallery">Photos</a><br>
+        <a href="#videos-gallery">Videos</a><br>
+        <a href="#videos">Reels</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p><a href="https://www.instagram.com/rc_center_official" target="_blank" rel="noopener">@rc_center_official</a></p>
+        <p><a href="mailto:rccenterofficial@gmail.com">rccenterofficial@gmail.com</a></p>
+        <p id="footer-address"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> RC Center (Ravi Chettu Center). All rights reserved.</p>
+      <p data-text="heroChant"></p>
+    </div>
+  </footer>
+
+  <script src="js/app.js?v=video-gallery"></script>
+</body>
+</html>

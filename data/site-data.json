@@ -1,0 +1,479 @@
+{
+  "theme": {
+    "primary": "#B3121E",
+    "primaryDark": "#0B0B0B",
+    "accent": "#FF9933",
+    "gold": "#FFB300",
+    "bg": "#FFFFFF",
+    "ink": "#111111",
+    "muted": "#555555"
+  },
+  "music": {
+    "enabled": true,
+    "title": "Om Ganeshaya Namah",
+    "src": "audio/om-ganeshaya-namah.mp3"
+  },
+  "text": {
+    "heroKicker": "Welcome to",
+    "heroTitle": "RC CENTER",
+    "heroSubtitle": "Ravi Chettu Center, Minagallu Village. Celebrating Ganesh Utsav together as one family.",
+    "heroQuote": "\"With the blessings of Lord Ganesha, we celebrate unity, faith and joy.\"",
+    "heroChant": "Ganpati Bappa Morya!",
+    "tickerWords": [
+      "Ganpati Bappa Morya",
+      "Om Gan Ganapataye Namaha",
+      "Jai Ganesh",
+      "Ganpati Bappa Morya",
+      "Vighna Harta, remover of obstacles"
+    ],
+    "watermark": "GANPATI BAPPA MORYA",
+    "highlightsTitle": "Festival highlights",
+    "highlightsIntro": "Our best memories, photos and reels from the festival.",
+    "noteTitle": "A note from our village",
+    "noteBody": [
+      "Dear friends and devotees, thank you for visiting our website.",
+      "Every year our village comes together to celebrate Ganesh Utsav with faith and togetherness. This website keeps our photos, videos and memories safe, so our children and future families can see them.",
+      "Everyone is welcome to join our festival. Ganpati Bappa Morya!"
+    ],
+    "noteSignature": "RC Center, Ravi Chettu Center",
+    "aboutTitle": "About our centre",
+    "aboutLead": "Ravi Chettu Center is the place where our whole village meets for Ganesh Utsav.",
+    "aboutParagraphs": [
+      "Every year, when Ganesh Chaturthi comes, our village becomes full of joy. The whole village gathers at the Ravi Chettu Centre to celebrate.",
+      "We worship Lord Ganesha with a full heart. Young and old, all sit together and share the work and the joy.",
+      "Our celebrations include daily pooja, a big community meal, evening bhajans, games for children, the Utti festival, and the farewell to Lord Ganesha."
+    ],
+    "aboutPointsTitle": "What we do every year",
+    "aboutPoints": [
+      "Pray to Lord Ganesha and ask for his blessings.",
+      "Serve food to every devotee who comes.",
+      "Keep our old Utti festival tradition alive.",
+      "Say a happy goodbye to Lord Ganesha with a farewell procession."
+    ],
+    "factsTitle": "FACTS",
+    "facts": [
+      "Lord Ganesha is worshipped first, before starting any new work or puja.",
+      "Ganesh Chaturthi is celebrated for 10 days in many places. Some families keep Ganesha for 1, 3, 5 or 7 days.",
+      "Modak is Lord Ganesha's favourite sweet, so it is offered in the pooja.",
+      "Lord Ganesha is called Vighnaharta, the remover of obstacles.",
+      "On the last day, the idol is taken for immersion (Nimajjanam) with singing, dancing and the chant \"Ganpati Bappa Morya!\"",
+      "Ganesha is a symbol of wisdom, good luck and new beginnings.",
+      "Our village celebrates together under one tree, which shows our unity."
+    ],
+    "celebrationTitle": "Our festival days",
+    "celebrationParagraphs": [
+      "Our Ganesh Utsav is held at the Ravi Chettu Center. The whole village helps with decorations, food and programmes.",
+      "Each day has its own programme: pooja in the morning and evening, bhajans at night, and cultural programmes for children and families."
+    ],
+    "closingChant": "Our Ganesha, our festival, our village, our Ravi Chettu Center!",
+    "heartText": "Touch this heart if you love Lord Ganesha"
+  },
+  "hero": {
+    "image": "images/hero/hero-mwwg4jw8.jpg"
+  },
+  "years": [
+    {
+      "year": 2025,
+      "title": "Ganesh Utsav 2025",
+      "theme": "Unity in Devotion"
+    },
+    {
+      "year": 2024,
+      "title": "Ganesh Utsav 2024",
+      "theme": "Faith & Tradition"
+    },
+    {
+      "year": 2026,
+      "title": "Ganesh Utsav 2026",
+      "theme": ""
+    },
+    {
+      "year": 2023,
+      "title": "Ganesh Agamanam",
+      "theme": ""
+    },
+    {
+      "year": 2022,
+      "title": "Ganesh Utsav 2022",
+      "theme": ""
+    }
+  ],
+  "events": [
+    {
+      "id": "pooja",
+      "name": "Ganesh Pooja",
+      "icon": "🪔",
+      "description": "Daily morning and evening poojas invoking the blessings of Lord Ganesha for the entire community."
+    },
+    {
+      "id": "annadanam",
+      "name": "Maha Annadanam",
+      "icon": "🍛",
+      "description": "A grand community meal served with devotion, where all are welcome to sit together and share prasadam."
+    },
+    {
+      "id": "bhajans",
+      "name": "Evening Bhajans",
+      "icon": "🎶",
+      "description": "Soulful devotional singing that fills the evenings with melody and collective prayer."
+    },
+    {
+      "id": "utti",
+      "name": "Utti Mahotsavam",
+      "icon": "🌺",
+      "description": "A traditional festival celebration rich with age-old customs and heartfelt offerings."
+    },
+    {
+      "id": "cultural",
+      "name": "Cultural Programs",
+      "icon": "🎭",
+      "description": "Dance, music and drama performances by our families, celebrating our cultural heritage."
+    },
+    {
+      "id": "nimajjanam",
+      "name": "Ganapati Nimajjanam",
+      "icon": "🙏",
+      "description": "The farewell procession as Lord Ganesha returns home, with chants of 'Ganapati Bappa Morya!'"
+    }
+  ],
+  "photos": [
+    {
+      "id": "pmwumznjqbbyv",
+      "year": 2026,
+      "event": "pooja",
+      "src": "images/gallery/2026/morning-ganesh-pooja-znjq.jpg",
+      "caption": "Morning Ganesh Pooja",
+      "alt": "Morning Ganesh Pooja"
+    },
+    {
+      "id": "pmwun1xs28ouw",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "images/gallery/2026/final-day-send-off-1xs2.jpg",
+      "caption": "Final Day Send Off",
+      "alt": "Final Day Send Off"
+    },
+    {
+      "id": "pmwwan8lqhvwo",
+      "year": 2025,
+      "event": "pooja",
+      "src": "images/gallery/2025/ganesh-pooja-n8lq.jpg",
+      "caption": "Ganesh Pooja",
+      "alt": "Ganesh Pooja"
+    },
+    {
+      "id": "pmwwase31480s",
+      "year": 2025,
+      "event": "nimajjanam",
+      "src": "images/gallery/2025/reliving-our-beautiful-moments-se30.jpg",
+      "caption": "Reliving Our Beautiful Moments ❤️",
+      "alt": "Reliving Our Beautiful Moments ❤️"
+    },
+    {
+      "id": "pmwwaurlt6jfx",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "images/gallery/2026/a-journey-filled-with-joy-urlt.jpg",
+      "caption": "A Journey Filled With Joy",
+      "alt": "A Journey Filled With Joy"
+    },
+    {
+      "id": "pmwwbd9z6y5eo",
+      "year": 2024,
+      "event": "pooja",
+      "src": "images/gallery/2024/ganesh-pooja-d9z6.jpg",
+      "caption": "Ganesh Pooja",
+      "alt": "Ganesh Pooja"
+    },
+    {
+      "id": "pmwwbfml20bfl",
+      "year": 2024,
+      "event": "nimajjanam",
+      "src": "images/gallery/2024/ganesh-nimajjanam-2024-fmkz.jpg",
+      "caption": "Ganesh Nimajjanam 2024",
+      "alt": "Ganesh Nimajjanam 2024"
+    },
+    {
+      "id": "pmwwbibvc33pa",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "images/gallery/2026/a-celebration-to-remember-ibvc.jpg",
+      "caption": "A Celebration to Remember 🎉",
+      "alt": "A Celebration to Remember 🎉"
+    },
+    {
+      "id": "pmwwc95b35zty",
+      "year": 2025,
+      "event": "nimajjanam",
+      "src": "images/gallery/2025/a-celebration-to-remember-95b3.jpg",
+      "caption": "A Celebration to Remember 🎉",
+      "alt": "A Celebration to Remember 🎉"
+    },
+    {
+      "id": "pmwwcceiee3ag",
+      "year": 2023,
+      "event": "pooja",
+      "src": "images/gallery/2023/here-to-starts-ceid.jpg",
+      "caption": "Here to starts.",
+      "alt": "Here to starts."
+    },
+    {
+      "id": "pmwwcebsgeu4g",
+      "year": 2022,
+      "event": "pooja",
+      "src": "images/gallery/2022/our-past-our-beautiful-journey-ebsf.jpg",
+      "caption": "Our Past, Our Beautiful Journey 🌼",
+      "alt": "Our Past, Our Beautiful Journey 🌼"
+    },
+    {
+      "id": "pmwwfcb3n8cze",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "images/gallery/2026/where-culture-comes-alive-cb3m.jpg",
+      "caption": "Where Culture Comes Alive 🎭",
+      "alt": "Where Culture Comes Alive 🎭"
+    },
+    {
+      "id": "pmwwfen5njfh7",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "images/gallery/2026/the-presence-says-everything-en5n.jpg",
+      "caption": "The Presence Says Everything 🤝",
+      "alt": "The Presence Says Everything 🤝"
+    },
+    {
+      "id": "pmwwfg4xxo79q",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "images/gallery/2026/a-spark-of-happiness-g4xw.jpg",
+      "caption": "A Spark of Happiness ❤️",
+      "alt": "A Spark of Happiness ❤️"
+    },
+    {
+      "id": "pmwwfizswm3iq",
+      "year": 2026,
+      "event": "utti",
+      "src": "images/gallery/2026/celebrating-the-spirit-of-utti-izsw.jpg",
+      "caption": "Celebrating the Spirit of Utti 🎉",
+      "alt": "Celebrating the Spirit of Utti 🎉"
+    }
+  ],
+  "memories": [
+    {
+      "id": "mmwumx7i8zpm5",
+      "year": 2025,
+      "title": "Ganesh Utsav 2025",
+      "text": "ORIGINAL IS ALWAYS ORIGINAL",
+      "cover": "images/gallery/2025/memory-2025-ganesh-utsav-2025.jpg"
+    },
+    {
+      "id": "mmwwgcmmzxe2v",
+      "year": 2026,
+      "title": "Ganapati Nimajjanam · 2026",
+      "text": "Cherishing the Beauty of Our Traditional Decorations. ❤️",
+      "cover": "images/gallery/2026/memory-2026-ganapati-nimajjanam-2026.jpg"
+    },
+    {
+      "id": "mmwwgf4ghovl5",
+      "year": 2024,
+      "title": "Ganapati Nimajjanam · 2024",
+      "text": "Remembering the Beautiful Decorations of Our Past Festivals. ❤️",
+      "cover": "images/gallery/2024/memory-2024-ganapati-nimajjanam-2024.jpg"
+    },
+    {
+      "id": "mmwwgivn4jps7",
+      "year": 2022,
+      "title": "A journey through years of beautiful Ganesh celebrations. ❤️",
+      "text": "Memories of devotion, creativity, and grand celebrations. 🎉",
+      "cover": "images/gallery/2022/memory-2022-a-journey-through-years-of-beautiful-ganesh-celebr.jpg"
+    },
+    {
+      "id": "mmwwgm4fn1omv",
+      "year": 2023,
+      "title": "A journey through years of beautiful Ganesh IDOLS",
+      "text": "Reliving the Magical Moments of Our Ganesh Festivals. 🎉",
+      "cover": "images/gallery/2023/memory-2023-a-journey-through-years-of-beautiful-ganesh-idols.jpg"
+    }
+  ],
+  "quotes": [
+    {
+      "text": "Where devotion gathers, the community becomes one family.",
+      "source": "RC Center"
+    },
+    {
+      "text": "Vakratunda Mahakaya Surya Koti Samaprabha. Nirvighnam Kuru Me Deva Sarva-Kaaryeshu Sarvada.",
+      "source": "Sloka of Lord Ganesha"
+    },
+    {
+      "text": "Om Gam Ganapataye Namaha.",
+      "source": "Ganesha Mantra"
+    }
+  ],
+  "contact": {
+    "address": "Ravi Chettu Center, Minagallu Village",
+    "phone": "",
+    "email": "rccenterofficial@gmail.com",
+    "instagram": "@rc_center_official"
+  },
+  "reels": [
+    {
+      "id": "rmwundmptzbtu",
+      "year": 2026,
+      "title": "A HUGE SEND OFF",
+      "url": "https://www.instagram.com/reel/DeHFux-iXVr/"
+    },
+    {
+      "id": "rmwwgultp4t55",
+      "year": 2026,
+      "title": "Reliving the Grand Moments of Our Final Day Celebrations. ✨",
+      "url": "https://www.instagram.com/p/DeGthDuGVb4/"
+    },
+    {
+      "id": "rmwwgxeebsdih",
+      "year": 2026,
+      "title": "Welcoming Lord Ganesha With Devotion and Joy. 🙏",
+      "url": "https://www.instagram.com/p/DdQNBkcGZDx/"
+    },
+    {
+      "id": "rmwwgyolq60tm",
+      "year": 2025,
+      "title": "The Grand Arrival of Lord Ganesha. 🌺",
+      "url": "https://www.instagram.com/reel/DdPB3cwizL5/"
+    }
+  ],
+  "images": {
+    "about": "images/site/about-mwwg3gmn.jpg",
+    "facts": "images/site/facts-mwwg5kak.jpg",
+    "heart": "images/site/heart-mwwg6jw5.jpg"
+  },
+  "videos": [
+    {
+      "id": "vmwwblwooaqpf",
+      "year": 2026,
+      "event": "pooja",
+      "src": "videos/gallery/2026/always-traned-setters-lwon.mp4",
+      "caption": "Always TRANED Setters",
+      "alt": "Always TRANED Setters"
+    },
+    {
+      "id": "vmwwbpf7vo2dq",
+      "year": 2026,
+      "event": "cultural",
+      "src": "videos/gallery/2026/every-clip-tells-a-story-pf7v.mp4",
+      "caption": "Every clip Tells a Story 📖",
+      "alt": "Every clip Tells a Story 📖"
+    },
+    {
+      "id": "vmwwbvwjl7b4p",
+      "year": 2026,
+      "event": "bhajans",
+      "src": "videos/gallery/2026/golden-days-beautiful-memories-vwjl.mp4",
+      "caption": "Golden Days, Beautiful Memories ✨",
+      "alt": "Golden Days, Beautiful Memories ✨"
+    },
+    {
+      "id": "vmwwbx7cf9ji4",
+      "year": 2026,
+      "event": "cultural",
+      "src": "videos/gallery/2026/journey-filled-with-joy-x7cf.mp4",
+      "caption": "Journey Filled With Joy",
+      "alt": "Journey Filled With Joy"
+    },
+    {
+      "id": "vmwwbzjjr2698",
+      "year": 2026,
+      "event": "annadanam",
+      "src": "videos/gallery/2026/moments-we-will-always-remember-zjjq.mp4",
+      "caption": "Moments We Will Always Remember ❤️",
+      "alt": "Moments We Will Always Remember ❤️"
+    },
+    {
+      "id": "vmwwe4ieiibxg",
+      "year": 2026,
+      "event": "utti",
+      "src": "videos/gallery/2026/another-milestone-4ieh.mp4",
+      "caption": "Another Milestone",
+      "alt": "Another Milestone"
+    },
+    {
+      "id": "vmwwerjmdoeug",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2026/every-frame-tells-a-story-rjmd.mp4",
+      "caption": "Every Frame Tells a Story 📸",
+      "alt": "Every Frame Tells a Story 📸"
+    },
+    {
+      "id": "vmwwetmr91qr0",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2026/the-sky-celebrates-with-us-tmr8.mp4",
+      "caption": "The Sky Celebrates With Us 🎆",
+      "alt": "The Sky Celebrates With Us 🎆"
+    },
+    {
+      "id": "vmwwewjayyd3i",
+      "year": 2026,
+      "event": "utti",
+      "src": "videos/gallery/2026/an-unforgettable-utti-celebration-wjax.mp4",
+      "caption": "An Unforgettable Utti Celebration 📸",
+      "alt": "An Unforgettable Utti Celebration 📸"
+    },
+    {
+      "id": "vmwwey9gu6hpy",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2026/a-night-filled-with-magic-y9gt.mp4",
+      "caption": "A Night Filled With Magic ✨",
+      "alt": "A Night Filled With Magic ✨"
+    },
+    {
+      "id": "vmwwf1gk8co7d",
+      "year": 2026,
+      "event": "cultural",
+      "src": "videos/gallery/2026/a-stage-full-of-talents-1gk7.mp4",
+      "caption": "A Stage Full of Talents 🎤",
+      "alt": "A Stage Full of Talents 🎤"
+    },
+    {
+      "id": "vmwwf7lu34gbv",
+      "year": 2026,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2026/an-ocean-of-love-and-support-7lu3.mp4",
+      "caption": "An Ocean of Love and Support 🌊",
+      "alt": "An Ocean of Love and Support 🌊"
+    },
+    {
+      "id": "vmwwfm35mt27i",
+      "year": 2025,
+      "event": "cultural",
+      "src": "videos/gallery/2025/moments-that-tell-our-story-m35m.mp4",
+      "caption": "Moments That Tell Our Story 🌟",
+      "alt": "Moments That Tell Our Story 🌟"
+    },
+    {
+      "id": "vmwwfpnifoy25",
+      "year": 2024,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2024/a-festival-full-of-vibrations-pnif.mp4",
+      "caption": "A Festival Full of Vibrations 🔊",
+      "alt": "A Festival Full of Vibrations 🔊"
+    },
+    {
+      "id": "vmwwftrksmqit",
+      "year": 2024,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2024/moments-worth-remembering-trkr.mp4",
+      "caption": "Moments Worth Remembering 📸",
+      "alt": "Moments Worth Remembering 📸"
+    },
+    {
+      "id": "vmwwfvymvv6i0",
+      "year": 2025,
+      "event": "nimajjanam",
+      "src": "videos/gallery/2025/our-journey-our-legacy-vymv.mp4",
+      "caption": "Our Journey, Our Legacy ✨",
+      "alt": "Our Journey, Our Legacy ✨"
+    }
+  ]
+}

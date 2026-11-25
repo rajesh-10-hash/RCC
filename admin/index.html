@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RC Center - Admin Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <section id="login" class="login-screen">
+    <form id="login-form" class="login-card">
+      <div class="login-om">ॐ</div>
+      <h1>RC Center Admin</h1>
+      <p>Enter the admin password to manage website content.</p>
+      <input type="password" id="password" placeholder="Admin password" autocomplete="current-password" required>
+      <button type="submit" class="btn">Sign In</button>
+      <p id="login-error" class="error" hidden>Incorrect password.</p>
+    </form>
+  </section>
+
+  <!-- Dashboard -->
+  <div id="app" hidden>
+    <header class="admin-header">
+      <div>
+        <strong>RC Center &middot; Admin</strong>
+        <span class="muted">Manage photos, videos and memories</span>
+      </div>
+      <div class="header-actions">
+        <a href="../index.html" target="_blank" class="btn btn-ghost">View Website</a>
+        <button id="logout" class="btn btn-ghost">Logout</button>
+      </div>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab" data-tab="photos" role="tab" aria-selected="true">Photos</button>
+      <button class="tab" data-tab="uploaded-videos" role="tab">Videos</button>
+      <button class="tab" data-tab="videos" role="tab">Instagram Reels</button>
+      <button class="tab" data-tab="memories" role="tab">Memories</button>
+      <button class="tab" data-tab="years" role="tab">Years &amp; Events</button>
+      <button class="tab" data-tab="hero" role="tab">Hero &amp; Quotes</button>
+      <button class="tab" data-tab="text" role="tab">Text &amp; Notes</button>
+      <button class="tab" data-tab="theme" role="tab">Colours &amp; Music</button>
+      <button class="tab" data-tab="publish" role="tab">Save &amp; Publish</button>
+    </nav>
+
+    <main class="admin-main">
+      <!-- PHOTOS -->
+      <section class="panel" data-panel="photos">
+        <h2>Add Photo</h2>
+        <form id="photo-form" class="form-grid">
+          <label>Festival year
+            <select name="year" required></select>
+          </label>
+          <label>Event
+            <select name="event" required></select>
+          </label>
+          <label>Caption
+            <input name="caption" required placeholder="e.g. Morning Ganesh Pooja">
+          </label>
+          <label>Photo file
+            <input type="file" name="file" accept="image/*" required>
+          </label>
+          <div class="preview-box" id="photo-preview">
+            <span class="muted">Choose a photo to see a preview. It will be compressed automatically for fast loading.</span>
+          </div>
+          <div class="form-full">
+            <p class="hint" id="photo-hint"></p>
+            <button type="submit" class="btn">Add Photo &amp; Download Optimized File</button>
+          </div>
+        </form>
+
+        <div class="list-head">
+          <h2>Photos on Website</h2>
+          <select id="photo-year-filter" class="small-select"></select>
+        </div>
+        <div id="photo-list" class="item-grid"></div>
+      </section>
+
+      <!-- UPLOADED VIDEOS -->
+      <section class="panel" data-panel="uploaded-videos" hidden>
+        <h2>Add Video</h2>
+        <form id="video-file-form" class="form-grid">
+          <label>Festival year
+            <select name="year" required></select>
+          </label>
+          <label>Event
+            <select name="event" required></select>
+          </label>
+          <label>Caption
+            <input name="caption" required placeholder="e.g. Ganapati Nimajjanam highlights">
+          </label>
+          <label>Video file
+            <input type="file" name="file" accept="video/*" required>
+          </label>
+          <div class="video-preview-box" id="video-file-preview">
+            <span class="muted">Choose a video file to preview.</span>
+          </div>
+          <div class="form-full">
+            <p class="hint" id="video-file-hint"></p>
+            <p class="hint">After adding it, save the downloaded video in <code>videos/gallery/YEAR/</code> in your project. Then download and replace <code>data/site-data.json</code> when publishing.</p>
+            <button type="submit" class="btn">Add Video &amp; Download File</button>
+          </div>
+        </form>
+
+        <div class="list-head">
+          <h2>Videos on Website</h2>
+          <select id="video-year-filter" class="small-select"></select>
+        </div>
+        <div id="uploaded-video-list" class="item-grid"></div>
+      </section>
+
+      <!-- INSTAGRAM REELS -->
+      <section class="panel" data-panel="videos" hidden>
+        <h2>Add Instagram Reel</h2>
+        <form id="video-form" class="form-grid">
+          <label>Festival year <select name="year" required></select></label>
+          <label>Reel title <input name="title" required placeholder="e.g. Ganesh Utsav 2025 Highlights"></label>
+          <label class="form-full">Instagram reel link
+            <input name="reel" required placeholder="https://www.instagram.com/reel/XXXXXXXXXXX/">
+          </label>
+          <div class="form-full">
+            <p class="hint">Open the reel on Instagram, tap the ••• menu, choose "Copy link", and paste it here. The reel must be public.</p>
+            <button type="submit" class="btn">Add Reel</button>
+          </div>
+        </form>
+        <h2>Reels on Website</h2>
+        <div id="video-list" class="item-grid"></div>
+      </section>
+
+      <!-- MEMORIES -->
+      <section class="panel" data-panel="memories" hidden>
+        <h2>Add Previous Year Memory</h2>
+        <form id="memory-form" class="form-grid">
+          <label>Year <select name="year" required></select></label>
+          <label>Title <input name="title" required placeholder="e.g. Ganesh Utsav 2024"></label>
+          <label class="form-full">Description <textarea name="text" rows="3" required></textarea></label>
+          <label>Cover photo <input type="file" name="file" accept="image/*" required></label>
+          <div class="preview-box" id="memory-preview"><span class="muted">Cover preview</span></div>
+          <div class="form-full">
+            <p class="hint" id="memory-hint"></p>
+            <button type="submit" class="btn">Add Memory &amp; Download Optimized Cover</button>
+          </div>
+        </form>
+        <h2>Memories on Website</h2>
+        <div id="memory-list" class="item-grid"></div>
+      </section>
+
+      <!-- YEARS & EVENTS -->
+      <section class="panel" data-panel="years" hidden>
+        <h2>Add Festival Year</h2>
+        <form id="year-form" class="form-grid">
+          <label>Year <input type="number" name="year" min="2000" max="2100" required></label>
+          <label>Theme / title <input name="title" required placeholder="e.g. Ganesh Utsav 2026"></label>
+          <div class="form-full"><button type="submit" class="btn">Add Year</button></div>
+        </form>
+        <h2>Festival Years</h2>
+        <div id="year-list" class="item-grid"></div>
+
+        <h2>Festival Events</h2>
+        <p class="hint">Event names and descriptions shown on the website. Edit the text directly and it saves automatically.</p>
+        <div id="event-list" class="item-grid"></div>
+      </section>
+
+      <!-- HERO & QUOTES -->
+      <section class="panel" data-panel="hero" hidden>
+        <h2>Pictures</h2>
+        <form id="hero-form" class="form-grid">
+          <label>Which picture
+            <select name="slot">
+              <option value="hero">Hero banner (top of homepage)</option>
+              <option value="about">About picture</option>
+              <option value="facts">Facts picture</option>
+              <option value="heart">Heart picture</option>
+            </select>
+          </label>
+          <label>Photo file <input type="file" name="file" accept="image/*" required></label>
+          <div class="preview-box" id="hero-preview"><span class="muted">Choose a wide image for the hero (1600 x 900 works best)</span></div>
+          <div class="form-full">
+            <p class="hint" id="hero-hint"></p>
+            <button type="submit" class="btn">Set picture &amp; Download optimised file</button>
+          </div>
+        </form>
+
+        <h2>Devotional Quotes &amp; Slokas</h2>
+        <form id="quote-form" class="form-grid">
+          <label class="form-full">Quote or sloka <textarea name="text" rows="2" required></textarea></label>
+          <label>Source <input name="source" required placeholder="e.g. Ganesha Mantra"></label>
+          <div><button type="submit" class="btn">Add Quote</button></div>
+        </form>
+        <div id="quote-list" class="item-grid"></div>
+      </section>
+
+
+      <!-- TEXT & NOTES -->
+      <section class="panel" data-panel="text" hidden>
+        <p class="hint">Edit any wording on the website. Changes appear on the site after you Save &amp; Publish. For lists (paragraphs, points) write one item per line.</p>
+
+        <h2>Hero (top of homepage)</h2>
+        <div class="form-grid">
+          <label>Small line above title <input data-bind="text.heroKicker"></label>
+          <label>Main title <input data-bind="text.heroTitle"></label>
+          <label>Subtitle <input data-bind="text.heroSubtitle"></label>
+          <label>Chant (bottom of hero) <input data-bind="text.heroChant"></label>
+          <label class="form-full">Devotional quote <input data-bind="text.heroQuote"></label>
+        </div>
+
+        <h2>Festival Highlights</h2>
+        <div class="form-grid">
+          <label>Section title <input data-bind="text.highlightsTitle"></label>
+          <label>Section intro <input data-bind="text.highlightsIntro"></label>
+        </div>
+
+        <h2>Note from our community</h2>
+        <div class="form-grid">
+          <label>Note title <input data-bind="text.noteTitle"></label>
+          <label>Signed by <input data-bind="text.noteSignature"></label>
+          <label class="form-full">Note (one paragraph per line)
+            <textarea rows="7" data-bind="text.noteBody" data-list></textarea>
+          </label>
+        </div>
+
+        <h2>About</h2>
+        <div class="form-grid">
+          <label>About title <input data-bind="text.aboutTitle"></label>
+          <label>Lead line <input data-bind="text.aboutLead"></label>
+          <label class="form-full">About paragraphs (one per line)
+            <textarea rows="8" data-bind="text.aboutParagraphs" data-list></textarea>
+          </label>
+          <label>Points box title <input data-bind="text.aboutPointsTitle"></label>
+          <label class="form-full">Points (one per line)
+            <textarea rows="5" data-bind="text.aboutPoints" data-list></textarea>
+          </label>
+        </div>
+
+        <h2>Facts, ticker and heart section</h2>
+        <div class="form-grid">
+          <label>Facts title <input data-bind="text.factsTitle"></label>
+          <label>Big faint words (watermark) <input data-bind="text.watermark"></label>
+          <label class="form-full">Facts (one per line, shown numbered)
+            <textarea rows="7" data-bind="text.facts" data-list></textarea>
+          </label>
+          <label class="form-full">Scrolling ticker words (one per line)
+            <textarea rows="4" data-bind="text.tickerWords" data-list></textarea>
+          </label>
+          <label class="form-full">Heart section text <input data-bind="text.heartText"></label>
+        </div>
+
+        <h2>Ganesh Utsav Celebrations</h2>
+        <div class="form-grid">
+          <label>Section title <input data-bind="text.celebrationTitle"></label>
+          <label>Closing line <input data-bind="text.closingChant"></label>
+          <label class="form-full">Paragraphs (one per line)
+            <textarea rows="6" data-bind="text.celebrationParagraphs" data-list></textarea>
+          </label>
+        </div>
+      </section>
+
+      <!-- COLOURS & MUSIC -->
+      <section class="panel" data-panel="theme" hidden>
+        <h2>Website Colours</h2>
+        <p class="hint">Pick colours and the whole website updates. Use "Reset" to go back to the devotional default.</p>
+        <div class="colour-grid">
+          <label>Main colour (vermilion) <input type="color" data-bind="theme.primary"></label>
+          <label>Dark colour (temple night) <input type="color" data-bind="theme.primaryDark"></label>
+          <label>Accent (saffron) <input type="color" data-bind="theme.accent"></label>
+          <label>Gold (marigold) <input type="color" data-bind="theme.gold"></label>
+          <label>Background (cream) <input type="color" data-bind="theme.bg"></label>
+          <label>Text colour <input type="color" data-bind="theme.ink"></label>
+        </div>
+        <button type="button" id="reset-theme" class="btn btn-ghost" style="margin-top:14px;color:var(--maroon);border-color:var(--maroon)">Reset to devotional default</button>
+
+        <h2>Background Music</h2>
+        <p class="hint">Visitors press Play to start the music, and can mute or unmute at any time. Browsers do not allow music to start automatically.</p>
+        <div class="form-grid">
+          <label>Music title <input data-bind="music.title"></label>
+          <label>Music file path <input data-bind="music.src" placeholder="audio/om-ganeshaya-namah.mp3"></label>
+          <label class="form-full check-row"><input type="checkbox" data-bind="music.enabled"> Show music player on the website</label>
+        </div>
+        <p class="hint">Upload your MP3 to the <code>audio</code> folder in the project with the exact file name above. Use only music you have the rights to use.</p>
+      </section>
+
+      <!-- PUBLISH -->
+      <section class="panel" data-panel="publish" hidden>
+        <h2>Save &amp; Publish</h2>
+        <div class="publish-steps">
+          <div class="step"><span>1</span><div><strong>Download content file</strong><p>Click below to download <code>site-data.json</code> with all your changes.</p></div></div>
+          <div class="step"><span>2</span><div><strong>Upload optimized images</strong><p>Upload the downloaded photo files into <code>images/gallery/YEAR/</code> (or <code>images/hero/</code> for the banner) in your project.</p></div></div>
+          <div class="step"><span>3</span><div><strong>Replace the data file</strong><p>Replace <code>data/site-data.json</code> in your project with the downloaded file and publish.</p></div></div>
+        </div>
+        <div class="publish-actions">
+          <button id="download-json" class="btn">Download site-data.json</button>
+          <button id="import-btn" class="btn btn-ghost">Import Existing site-data.json</button>
+          <input type="file" id="import-file" accept="application/json" hidden>
+          <button id="reset-draft" class="btn btn-ghost">Discard Unsaved Changes</button>
+        </div>
+        <p class="hint">Your changes are auto-saved in this browser until you download the file.</p>
+        <p id="status" class="status" role="status"></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js?v=video-upload-fix"></script>
+</body>
+</html>
